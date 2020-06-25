@@ -1,19 +1,26 @@
-
+// Tentativo di esecuzione con setTimeout
 
 btn.addEventListener("click", function() {
 
-  arr = [];
+  // arr = [];
+  //
+  // for (var i = 1; i < 101; i++) {
+  //   arr.push(i);
+  // }
+  //
+  // function delay() {
+  //     console.log(arr[c]);
+  //   }
+  //
+  // }
+  //
+  // setTimeout(delay(), 1000);
 
-  for (var i = 1; i < 101; i++) {
-    arr.push(i);
-  }
 
-  function delay() {
-    for (var c = 0; c < arr.length; c++)
-    console.log(arr[c]);
-  }
 
-  setTimeout(delay(), 1000);
+
+
+
 
   // var printNumbersForEvery02Sec = (n) => {
   //
@@ -38,4 +45,45 @@ btn.addEventListener("click", function() {
   //   }
   // }
   // printNumbersForEvery02Sec(100);
+
+
+  // for (var i = 1; (i < 100 +1); i++) {
+  //
+  //   if (i%3 == 0 && i%5 == 0) {
+  //    console.log("FizzBuzz");
+  //    setInterval(function(){}, 250)
+  //    continue;
+  //  }
+  //   else if (i%3 == 0) {
+  //     console.log("Fizz");
+  //     setInterval(function(){}, 250)
+  //     continue;
+  //   }
+  //   else if (i%5 == 0) {
+  //     console.log("Buzz");
+  //     setInterval(function(){}, 250)
+  //     continue;
+  //   }
+  //   setInterval(function(){}, 250)
+  //
+  //   console.log(i);
+  // }
+
+
+  var i = 1;
+  setInterval(function(){
+      if (i%3 == 0 && i%5 == 0) {
+       console.log("FizzBuzz");
+     }
+      else if (i%3 == 0) {
+        console.log("Fizz");
+      }
+      else if (i%5 == 0) {
+        console.log("Buzz");
+      }
+       if(i === 100){
+     }   console.log(i);
+        i++;
+  }, 250);
+
 });
